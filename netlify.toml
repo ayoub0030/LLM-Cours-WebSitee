@@ -1,0 +1,10 @@
+[build]
+  # No build command needed for static HTML/CSS/JS
+  # command = ""
+  # Directory containing the deploy-ready HTML files and assets
+  publish = "/" 
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

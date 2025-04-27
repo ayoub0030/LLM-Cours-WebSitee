@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Course - Learn LLMs Easily</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Learn LLMs</h1>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course.html" class="active">Course</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="course-container">
+        <section class="course-header">
+            <h1>LLM Course Content</h1>
+            <p>Dive into the fascinating world of Large Language Models. Explore the core concepts, history, and practical applications.</p>
+        </section>
+
+        <div class="course-sections">
+            <!-- Section 1: Definition -->
+            <section class="course-section" id="definition">
+                <div class="section-header">
+                    <i class="fas fa-book section-icon"></i>
+                    <h2 class="section-title">What is an LLM?</h2>
+                </div>
+                <div class="section-content">
+                    <p>An LLM (Large Language Model) is an artificial intelligence that can understand and generate human language. It reads a lot of text, learns patterns, and then can answer questions, write articles, chat, and much more.</p>
+                    <p>It’s a computer program trained on huge amounts of text — books, websites, conversations — so it can "predict" the next word, sentence, or paragraph based on what you ask.</p>
+                    <p><strong>Simple Example:</strong></p>
+                    <p>Input: "The weather today is"</p>
+                    <p>LLM predicts: "sunny and warm in most areas."</p>
+                </div>
+            </section>
+
+            <!-- Section 2: Why We Need LLMs -->
+            <section class="course-section" id="why-needed">
+                <div class="section-header">
+                    <i class="fas fa-lightbulb section-icon"></i>
+                    <h2 class="section-title">Why Do We Need LLMs?</h2>
+                </div>
+                <div class="section-content">
+                    <ul>
+                        <li>To understand human language automatically.</li>
+                        <li>To answer questions fast (like a smart assistant).</li>
+                        <li>To generate creative text, code, and other content.</li>
+                        <li>To summarize large amounts of information quickly.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 3: History -->
+            <section class="course-section" id="history">
+                <div class="section-header">
+                    <i class="fas fa-history section-icon"></i>
+                    <h2 class="section-title">History (What Existed Before)</h2>
+                </div>
+                <div class="section-content">
+                    <p>Before LLMs, we used models like:</p>
+                    <ul>
+                        <li><strong>RNN (Recurrent Neural Networks):</strong> Understood sequences but were slow and often forgot information from earlier in long sentences.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 4: Who Created LLMs -->
+            <section class="course-section" id="creators">
+                <div class="section-header">
+                    <i class="fas fa-users section-icon"></i>
+                    <h2 class="section-title">Who Created the First LLM?</h2>
+                </div>
+                <div class="section-content">
+                    <p>The real "revolution" came with the paper <strong>"Attention is All You Need"</strong> in 2017 by researchers at Google. They introduced <strong>Transformer models</strong>, which made modern LLMs possible.</p>
+                    <p>Later, companies like OpenAI created the first popular LLMs like GPT-1, GPT-2, and now GPT-4.</p>
+                    <p><strong>Important Names:</strong></p>
+                    <ul>
+                        <li>Google researchers (2017): Created the Transformer architecture.</li>
+                        <li>OpenAI team (2018+): Created GPT models (Generative Pre-trained Transformer).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 5: How LLMs Work -->
+            <section class="course-section" id="how-it-works">
+                <div class="section-header">
+                    <i class="fas fa-cogs section-icon"></i>
+                    <h2 class="section-title">How LLMs Work (Step-by-Step)</h2>
+                </div>
+                <div class="section-content">
+                    <p><strong>Step 1: Input the Text (Prompt)</strong></p>
+                    <p>You give the model some text. Example: "Tell me a story about a dragon."</p>
+
+                    <p><strong>Step 2: Tokenization (Breaking Text into Pieces)</strong></p>
+                    <p>The LLM cuts the text into small parts called tokens (words, parts of words, or letters). Example: "Tell me a story" → ["Tell", "me", "a", "story"]</p>
+
+                    <p><strong>Step 3: Understanding Context (Attention Mechanism)</strong></p>
+                    <p>The LLM looks at all the words at the same time using "attention" to check which words are most important and how they connect. It compares words, calculates connection scores (attention matrix), and focuses on important links. Example: In "The dragon is brave", it knows "dragon" connects strongly to "brave".</p>
+
+                    <p><strong>Step 4: Predict the Next Word</strong></p>
+                    <p>The model guesses the next best word based on what it saw. It looks at the words, guesses possibilities, scores them, and picks the most likely one. Example: Input: "The dragon is" → Prediction: "brave"</p>
+
+                    <p><strong>Step 5: Repeat Step 4 Until Complete</strong></p>
+                    <p>It adds the predicted word and continues predicting the next, and the next, until the answer is complete. Example: Response: "Once upon a time, a brave dragon lived..."</p>
+
+                    <p><strong>How LLM Knows When to Stop:</strong></p>
+                    <ul>
+                        <li><strong>Special [EOS] Token:</strong> Learns to predict an "End of Sentence" token when the meaning is complete.</li>
+                        <li><strong>Safety Limits:</strong> If it doesn't predict [EOS], a maximum token limit forces it to stop.</li>
+                    </ul>
+                    
+                    <!-- Visualization Placeholder -->
+                    <div class="visualization">
+                        <h3>LLM Workflow</h3>
+                        <!-- Simple SVG or placeholder image -->
+                        <svg class="flow-chart" width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="#6c63ff" />
+                                </marker>
+                            </defs>
+                            <rect x="10" y="50" width="100" height="50" fill="#e0c3fc" stroke="#6c63ff" rx="5" />
+                            <text x="60" y="80" text-anchor="middle" font-size="12">Input Text</text>
+                            <line x1="110" y1="75" x2="140" y2="75" stroke="#6c63ff" stroke-width="2" marker-end="url(#arrowhead)" />
+                            <rect x="140" y="50" width="100" height="50" fill="#e0c3fc" stroke="#6c63ff" rx="5" />
+                            <text x="190" y="80" text-anchor="middle" font-size="12">Tokenize</text>
+                            <line x1="240" y1="75" x2="270" y2="75" stroke="#6c63ff" stroke-width="2" marker-end="url(#arrowhead)" />
+                            <rect x="270" y="50" width="100" height="50" fill="#e0c3fc" stroke="#6c63ff" rx="5" />
+                            <text x="320" y="80" text-anchor="middle" font-size="12">Context</text>
+                            <line x1="370" y1="75" x2="400" y2="75" stroke="#6c63ff" stroke-width="2" marker-end="url(#arrowhead)" />
+                            <rect x="400" y="50" width="100" height="50" fill="#e0c3fc" stroke="#6c63ff" rx="5" />
+                            <text x="450" y="80" text-anchor="middle" font-size="12">Predict</text>
+                            <line x1="500" y1="75" x2="530" y2="75" stroke="#6c63ff" stroke-width="2" marker-end="url(#arrowhead)" />
+                             <rect x="530" y="50" width="60" height="50" fill="#e0c3fc" stroke="#6c63ff" rx="5" />
+                            <text x="560" y="80" text-anchor="middle" font-size="12">Output</text>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 6: How to Build -->
+            <section class="course-section" id="how-to-build">
+                <div class="section-header">
+                    <i class="fas fa-tools section-icon"></i>
+                    <h2 class="section-title">How to Build an LLM</h2>
+                </div>
+                <div class="section-content">
+                    <ol>
+                        <li><strong>Collect a Huge Dataset (Text Data):</strong> Gather massive amounts of text (books, websites, code).</li>
+                        <li><strong>Preprocess the Data (Cleaning):</strong> Clean the text (remove errors, split) and format it.</li>
+                        <li><strong>Tokenize the Data:</strong> Turn text into numbers (tokens).</li>
+                        <li><strong>Choose the Model Architecture:</strong> Select a neural network, usually Transformer-based.</li>
+                        <li><strong>Train the Model:</strong> The model reads text, guesses the next word, and corrects mistakes. Needs powerful hardware (GPUs/TPUs), time, and money.</li>
+                        <li><strong>Fine-tune (Optional):</strong> Train further on specific data (e.g., medical texts for a Doctor LLM).</li>
+                        <li><strong>Deploy and Use It:</strong> Save the model and integrate it into applications.</li>
+                    </ol>
+
+                    <!-- Visualization Placeholder -->
+                    <div class="visualization">
+                        <h3>LLM Creation Timeline</h3>
+                        <div class="timeline">
+                            <div class="timeline-item left">
+                                <div class="timeline-content">
+                                    <h3>Step 1-2</h3>
+                                    <p>Collect & Clean Data</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item right">
+                                <div class="timeline-content">
+                                    <h3>Step 3</h3>
+                                    <p>Tokenize Data</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item left">
+                                <div class="timeline-content">
+                                    <h3>Step 4</h3>
+                                    <p>Choose Architecture</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item right">
+                                <div class="timeline-content">
+                                    <h3>Step 5</h3>
+                                    <p>Train Model (Expensive!)</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item left">
+                                <div class="timeline-content">
+                                    <h3>Step 6</h3>
+                                    <p>Fine-tune (Optional)</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item right">
+                                <div class="timeline-content">
+                                    <h3>Step 7</h3>
+                                    <p>Deploy & Use</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 7: Important Things -->
+            <section class="course-section" id="important-things">
+                <div class="section-header">
+                    <i class="fas fa-exclamation-circle section-icon"></i>
+                    <h2 class="section-title">Important Things to Know</h2>
+                </div>
+                <div class="section-content">
+                    <ul>
+                        <li><strong>Training Cost & Hardware:</strong> Training is expensive (millions $) and requires powerful GPUs/TPUs. Fine-tuning existing models is more accessible.</li>
+                        <li><strong>Evaluation:</strong> Test models for correctness, creativity, relevance, and avoiding hallucinations (making up facts).</li>
+                        <li><strong>Fine-tuning vs. Prompting:</strong> Fine-tuning changes model knowledge via re-training. Prompting guides the existing model with better instructions.</li>
+                        <li><strong>Limits & Problems:</strong> LLMs can hallucinate, be biased (from training data), and don't truly "understand" like humans. Always verify important outputs.</li>
+                        <li><strong>Popular Open-Source LLMs:</strong> GPT-2, LLaMA, Mistral, Gemma are examples you can try or fine-tune.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 8: Prompting Guide -->
+            <section class="course-section" id="prompting-guide">
+                <div class="section-header">
+                    <i class="fas fa-magic section-icon"></i>
+                    <h2 class="section-title">Quick Prompting Guide</h2>
+                </div>
+                <div class="section-content">
+                    <p>Get better answers by giving better instructions (prompts):</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Trick</th>
+                                <th>How to Do It</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Be Clear</strong></td>
+                                <td>Tell exactly what you want.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Set a Role</strong></td>
+                                <td>"You are a helpful assistant specializing in..."</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ask for Format</strong></td>
+                                <td>"Give me the answer as a bulleted list / paragraph / table."</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Split Steps</strong></td>
+                                <td>Break down complex tasks into smaller prompts.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Give Examples</strong></td>
+                                <td>Show the format or style you want with a small example.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Learn LLMs</h3>
+                <p>Making AI understandable for everyone</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Learn LLMs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
